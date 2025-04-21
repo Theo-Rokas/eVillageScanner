@@ -1,0 +1,38 @@
+﻿<ContentPage
+    x:Class="eVillageScanner.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+    Padding="20"
+    BackgroundColor="#333">
+
+    <Grid>
+        <StackLayout Spacing="20" VerticalOptions="CenterAndExpand">
+            <Label
+                FontAttributes="Bold"
+                FontSize="28"
+                HorizontalOptions="Center"
+                Text="eVillageScanner"
+                TextColor="WhiteSmoke" />
+
+            <Frame
+                x:Name="scannerFrame"
+                Padding="0"
+                BackgroundColor="#333"
+                BorderColor="lightgray"
+                CornerRadius="10"
+                HasShadow="True"
+                HeightRequest="300" />
+        </StackLayout>
+
+        <ActivityIndicator
+            x:Name="loadingIndicator"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            IsRunning="False"
+            IsVisible="False"
+            VerticalOptions="Center"
+            WidthRequest="50"
+            Color="WhiteSmoke" />
+    </Grid>
+</ContentPage>
